@@ -5,7 +5,7 @@ services:
     build: .
     container_name: bedrock-server
     ports:
-      - "19132:19132/udp"
+      - "${PORT}:19132/udp"
     volumes:
       - ./server_data:/bedrock
     stdin_open: true
